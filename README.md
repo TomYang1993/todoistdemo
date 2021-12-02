@@ -71,6 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # todoistdemo
 
 a clone of the to do app
-made by react, maybe sass 
-
-will you manage multiple accounts?
+made by react, maybe sass
