@@ -3,7 +3,7 @@ import { Tasks } from '../Tasks';
 import { Sidebar } from "./Sidebar"
 
 export const Content = () => {
-    return (<section>
+    return (<section className="content">
         <Sidebar />
         <Tasks />
     </section>)

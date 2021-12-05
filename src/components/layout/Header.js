@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPizzaSlice } from "react-icons/fa";
 
-export const Header = () => {
+export const Header = ({ darkMode, setDarkMode }) => {
+  const [shouldShowMain, setShouldShowMain] = useState(false);
+  const [showQuickAddTask, setShowQuickAddTask] = useState(false);
+
   return (
     <header>
       <nav>
@@ -14,7 +17,9 @@ export const Header = () => {
               +
             </li>
             <li data-testid="dark-mode-action" className="settings__darkmode">
-              <FaPizzaSlice />
+              <button data-testid="dark-mode-action" aria-label="Darkmode on/off" type="button" onClick={() => setDarkMode(!darkMode)}>
+                <FaPizzaSlice />
+              </button>
             </li>
           </ul>
         </div>

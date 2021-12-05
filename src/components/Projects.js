@@ -11,7 +11,7 @@ export const Projects = ({ activeValue = null }) => {
     projects &&
     projects.map((project) => (
       <li
-        key={project.projectId}
+        key={project.docId}
         data-testid="project-action-parent"
         data-doc-id={project.docId}
         className={
